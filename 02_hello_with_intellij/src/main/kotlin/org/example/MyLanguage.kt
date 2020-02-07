@@ -14,3 +14,15 @@ class MyLibrary {
      */
     fun kotlinLanguage(): Language = Language("Kotlin", 10)
 }
+
+// インデントを崩したりするために不要なコードを追加
+class Temp {
+    fun myMessage(): String {
+        val contents = listOf(
+            "abc",
+            "def"
+        )
+       var ret = contents.joinToString("-")
+        return "$ret-z"
+    }
+}

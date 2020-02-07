@@ -3,8 +3,7 @@ use Intellij
 
 ## tasks
 1. create Gradle Project
-2. with Intellij and terminal
-    1. succeed test with Intellij but failed with terminal
+2. unit test with Intellij and terminal
 3. How do I use snippet?
 4. How do I use template?
 
@@ -21,3 +20,22 @@ source ~/.zshrc
 sdk install gradle 6.1.1
 sdk install kotlin 1.3.61
 ```
+
+### ktlint-gradle
+チェック実行は `gradle ktlintCheck`
+
+Intellij の設定は`gradle ktlintApplyToIde`。これで「.idea/codeStyle」配下が書き換わる？
+
+#### なんかIntellijでエラー
+* `Could not create task ':ktlintMainSourceSetCheck''`
+* `File must end with a newline`のエラーがIntellij上では出ない
+
+### EditorConfig
+https://editorconfig.org/
+
+.editorconfigファイルを配置したディレクトリで個別にCodingStyleを指定できる仕組み
+
+らしいのだがどうもあまりうまくできない
+
+## 結局
+lintに関することはIssueにあげておく
