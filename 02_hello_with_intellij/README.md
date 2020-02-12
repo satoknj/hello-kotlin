@@ -37,5 +37,18 @@ https://editorconfig.org/
 
 らしいのだがどうもあまりうまくできない
 
-## 結局
+### 結局
 lintに関することはIssueにあげておく
+
+## code snippets
+It's called as "Live Template" in Intellij IDEA.
+
+The custom Live Template file is in `~/Library/Preferences/IdeaIC2019.3/templates`
+
+## File templates
+* os user level 
+    * file is in `~/Library/Preferences/IdeaIC2019.3/fileTemplates`
+* Project Level
+    * file is in `$ProjectRoot/.idea/fileTemplates`
+    
+ code template is for Intellij. if developer wants new snippets, use "Live Templates"
