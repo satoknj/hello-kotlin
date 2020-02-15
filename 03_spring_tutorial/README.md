@@ -5,7 +5,7 @@
 1. make this project dir
 2. import demo files to Intellij
 
-also from command line. e.g. blog project
+or from command line. e.g. blog project
 ```bash
 mkdir blog && cd blog
 curl https://start.spring.io/starter.zip \
@@ -16,3 +16,5 @@ curl https://start.spring.io/starter.zip \
     -o blog.zip
 ```
 
+## run application
+access to http://localhost:8080 after run `gradle bootRun`
