@@ -40,6 +40,10 @@ dependencies {
 
 tasks.withType<Test> {
 	useJUnitPlatform()
+    testLogging {
+        // too many output for spring boot e2e
+		//events("standardOut", "started", "passed", "skipped", "failed")
+	}
 }
 
 tasks.withType<KotlinCompile> {
