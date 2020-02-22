@@ -19,3 +19,8 @@ try bellow
     * Intellij IDEA
     * Gradle
     * ktlint
+* 03_spring_tutorial
+    * Spring boot tutorial
+
+## todo
+* spring data jpa

@@ -18,3 +18,7 @@ curl https://start.spring.io/starter.zip \
 
 ## run application
 access to http://localhost:8080 after run `gradle bootRun`
+
+## repository
+* interfaceに決まった命名規則でメソッドを定義すると、自動で実装してくれる
+    * https://docs.spring.io/spring-data/jpa/docs/1.6.0.RELEASE/reference/html/jpa.repositories.html
