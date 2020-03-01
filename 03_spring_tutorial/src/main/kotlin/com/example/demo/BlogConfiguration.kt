@@ -8,20 +8,21 @@ import org.springframework.context.annotation.Configuration
 class BlogConfiguration {
     @Bean
     fun datsabaseInitializer(
-            userRepository: UserRepository,
-            articleRepository: ArticleRepository) = ApplicationRunner {
+        userRepository: UserRepository,
+        articleRepository: ArticleRepository
+    ) = ApplicationRunner {
         val smaldini = userRepository.save(User("smaldini", "Stephane", "Maldini"))
         articleRepository.save(Article(
-                title = "Reactor Bismuth is out",
-                headline = "Lorem ipsum",
-                content = "dolor sit amet",
-                author = smaldini
+            title = "Reactor Bismuth is out",
+            headline = "Lorem ipsum",
+            content = "dolor sit amet",
+            author = smaldini
         ))
         articleRepository.save(Article(
-                title = "Reactor Aluminium has landed",
-                headline = "Lorem ipsum",
-                content = "dolor sit amet",
-                author = smaldini
+            title = "Reactor Aluminium has landed",
+            headline = "Lorem ipsum",
+            content = "dolor sit amet",
+            author = smaldini
         ))
     }
 }
