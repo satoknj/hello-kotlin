@@ -7,6 +7,7 @@ try bellow
 * lint tool
 * unit test
 * with RDB
+* dependency injection
 * create REST API
 * multple project
 * performance profile
